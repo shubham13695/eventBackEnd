@@ -2,7 +2,10 @@
 const {gql} = require('apollo-server-express');
 const HelloTypeDefs = gql`
   type Query {
-    hello: String
+    hello(name:String!): String
+  }
+  input TypeInput {
+    name:String
   }
 `;
 

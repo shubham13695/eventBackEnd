@@ -1,8 +1,10 @@
 let HelloResolvers = {
     Query: {
-        hello: () => 'Hello world!',
+        hello: (root,{name}) =>{ 
+                    return 'Hello world! '+name
+                }
     },
 };
 
 
-exports.HelloResolvers = HelloResolvers
+exports.Resolvers = HelloResolvers

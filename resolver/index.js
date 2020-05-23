@@ -1,5 +1,5 @@
 const ResolversBundle = {
-    ...require('./helloResolver/hello.resolver').HelloResolvers
+    ...require('./helloResolver/hello.resolver').Resolvers
 };
 
 module.exports = ResolversBundle
